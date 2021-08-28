@@ -139,6 +139,10 @@ h1,h2{
     display: none;
     font-weight: 500;
 }
+.span__block .span__strong{
+    display: none;
+   
+}
 @keyframes moveSpan {
     0%{
         opacity: 0;
@@ -148,10 +152,17 @@ h1,h2{
     }
 }
 .section:hover > .block > .link__block > .span__block{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     animation: moveSpan 2s;
 }
 @media (min-width: 768px) {  
+    .span__block .span__strong{
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+    }
     .container{
         flex-direction: row;
         width: 100vw;
@@ -237,5 +248,13 @@ h1,h2{
     .section:hover > .block > .link__block > .img__block{
         align-self: center;
     }
-    
+    .tittle{
+        justify-content: start;
+    }
+    .tittle__h1{
+        font-size: 48px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        padding: 20px;
+    }
 }
