@@ -15,12 +15,7 @@ body{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
-img{
-    box-sizing: border-box;
-    object-fit: contain;
-    height: 30vh;
-    width: 50vw;
-}
+
 a{
     text-decoration: none;
 }

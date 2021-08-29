@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
+img{
+    box-sizing: border-box;
+    object-fit: contain;
+    height: 30vh;
+    width: 50vw;
+}
 
 .tittle{
     position: absolute;
