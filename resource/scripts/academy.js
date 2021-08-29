@@ -6,12 +6,12 @@ arrows?.forEach(arrow => {arrow.addEventListener('click', (e)=> {
     let unidSlider = document.querySelectorAll('.slider__content')[0].clientWidth;
     let maxCont = contSlider.scrollWidth;
     const minCont = 0;
-    console.log(unidSlider);
     switch (arrowSelect) {
         case "prev":
             let Res = this.positScroll - unidSlider ;      
+            let ultimate = maxCont - unidSlider ;
             contSlider.scroll({      
-                left: Res >= maxCont ?  this.positScroll = 0  : this.positScroll -= unidSlider,
+                left: Res < minCont ?  this.positScroll = ultimate : this.positScroll -= unidSlider,
                 behavior: 'smooth'
             });
           break;
@@ -25,4 +25,26 @@ arrows?.forEach(arrow => {arrow.addEventListener('click', (e)=> {
         
       }
     })
-  })
+})
+var unidSlider = document.querySelectorAll('.slider__content')[0].clientWidth;
+var contSlider= document.getElementById('slideSect').scrollWidth;
+var contSlider= document.getElementById('slideSect');
+
+var clear;
+document.getElementById('sectSlider').addEventListener('mouseout', (e)=>{   
+    clearInterval(clear);
+});
+document.getElementById('sectSlider').addEventListener('mouseleave', (e)=>{   
+    clear= setInterval(autoPlay, 2000);
+});
+clear= setInterval(autoPlay, 2000);
+
+function autoPlay(params) {
+    let maxCont = contSlider.scrollWidth;
+    let Sum = this.positScroll + unidSlider ; 
+        contSlider.scroll({      
+            left: Sum >= maxCont ?  this.positScroll = 0  : this.positScroll += unidSlider,
+            behavior: 'smooth'
+        });
+}
+     
