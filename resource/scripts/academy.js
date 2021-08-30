@@ -21,8 +21,7 @@ arrows?.forEach(arrow => {arrow.addEventListener('click', (e)=> {
                 left: Sum >= maxCont ?  this.positScroll = 0  : this.positScroll += unidSlider,
                 behavior: 'smooth'
             });
-          break;
-        
+          break;        
       }
     })
 })
