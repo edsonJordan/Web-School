@@ -187,6 +187,7 @@ img{
     color: var(--color-primary);
 }
 .section__slider{
+    
     position: relative;
     height:40vh;
 }
@@ -194,7 +195,6 @@ img{
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 100vw;
     height: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -284,17 +284,16 @@ row-gap: 10PX;
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    
+    text-align: center;    
     row-gap: 25px;
 }
+
 .card{
     display: flex;
     position: relative;
     width: 100%;
     justify-content: center;
     border: 2px solid var(--color-gray);
-    padding: 5px;
     cursor: pointer;
 }
 .card:hover{
@@ -302,10 +301,14 @@ row-gap: 10PX;
     transition: border-color 1s;
 }
 .card__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--color-gray);
     font-family: var(--font--primary);
     font-weight: 900;
     font-size: 22px;
+
 }
 .card:hover .card__link{
     color: var(--color-primary);
@@ -319,18 +322,104 @@ row-gap: 10PX;
 }
 .card__tittle{
     font-size: 18px;
-    font-weight: 500;
-    
+    font-weight: 500;    
 }
-.card__link{
-    display: flex;
-    flex-direction: column;
-}
+
 .img__card{
     width: 15rem;
     height: 15rem;
     fill: var(--color-gray);
     stroke: var(--color-gray);
+}
+.section__application{
+    row-gap: initial;
+    padding-bottom: initial;
+}
+.content__fixed{
+    min-height: 10rem;
+    position: relative;  
+    background-image: url(/resource/student__consult-min.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center top;
+    background-attachment: fixed;
+
+}
+.content__fixed::before{
+    content: "";
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    opacity: .3;
+}
+.content__card--application{
+    background-color: var(--color-primary);
+   row-gap: initial;
+}
+.card__application{
+    border: none;    
+    padding: 30px 0;
+}
+.card__application:nth-child(1){
+    background-color: rgba(255, 255, 255, .4);
+}
+.card__application:nth-child(2){
+    background-color: rgba(255, 255, 255, .3);
+}
+.card__application:nth-child(3){
+    background-color: rgba(255, 255, 255, .2);
+}
+.card__application:nth-child(4){
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.card__application:hover{
+    background-color: rgba(255, 255, 255, .45);
+}
+.card__link--application{
+    color: var(--color-secondary);
+    row-gap: 5px;
+}
+.card:hover .card__link--application{
+    color: var(--color-secondary);
+}
+.img__icon{ 
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-secondary);
+}
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-secondary);
+    row-gap: 20px;
+}
+.list{
+    row-gap: 5px;
+}
+.section__footer{
+    background-color: var(--color-gray);
+}
+.icon__social{
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--color-secondary);
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.footer__li{
+    color: var(--color-secondary);
+    
+}
+.footer__list--social{
+    flex-direction: row;
+    column-gap: 10px;
 }
 .none{
     display: none;
