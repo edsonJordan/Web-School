@@ -340,9 +340,8 @@ row-gap: 10PX;
     position: relative;  
     background-image: url(/resource/student__consult-min.jpeg);
     background-repeat: no-repeat;
-    background-size: contain;    
+    background-size: cover;    
     background-position: center top;
-    background-attachment: fixed;
 
 }
 .content__fixed::before{
@@ -397,6 +396,7 @@ row-gap: 10PX;
     text-align: center;
     color: var(--color-secondary);
     row-gap: 20px;
+    font-family: var(--font--secundary);
 }
 .list{
     row-gap: 5px;
@@ -414,12 +414,15 @@ row-gap: 10PX;
     flex-direction: column;
 }
 .footer__li{
-    color: var(--color-secondary);
-    
+    color: var(--color-secondary);    
+}
+.footer__list{
+    font-family: var(--font--primary);
 }
 .footer__list--social{
     flex-direction: row;
     column-gap: 10px;
+    
 }
 .none{
     display: none;
