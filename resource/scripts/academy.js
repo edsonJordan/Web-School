@@ -34,9 +34,9 @@ document.getElementById('sectSlider').addEventListener('mouseout', (e)=>{
     clearInterval(clear);
 });
 document.getElementById('sectSlider').addEventListener('mouseleave', (e)=>{   
-    clear= setInterval(autoPlay, 2000);
+    clear= setInterval(autoPlay, 5000);
 });
-clear= setInterval(autoPlay, 2000);
+clear= setInterval(autoPlay, 5000);
 
 function autoPlay(params) {
     let maxCont = contSlider.scrollWidth;
