@@ -15,7 +15,9 @@ img{
     --font--primary: 'Rajdhani', sans-serif;
     --font--secundary:'Lato', serif;;
 }
-
+.container{
+    position: relative;
+}
 @keyframes LeftLinkRight {
     0% {
         transform: translateX(100px);
@@ -255,7 +257,23 @@ img{
 .arrow:hover{
     border-color: rgba(255, 255, 255, .8);
 }
+.section__body{
+    width: 100%;
+}
+
+.body__header{
+font-family: var(--font--secundary);
+color: var(--color-gray);
+padding: 20px 10px;
+}
+.body__tittle{
+    font-weight: 800;
+}
+.body__span{
+    font-weight: 300;
+}
 .content__cards{
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -297,8 +315,8 @@ img{
     flex-direction: column;
 }
 .img__card{
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     fill: var(--color-gray);
     stroke: var(--color-gray);
 }
