@@ -363,7 +363,7 @@ row-gap: 10PX;
 .content__fixed{
     min-height: 10rem;
     position: relative;  
-    background-image: url(/resource/student__consult-min.jpeg);
+    background-image: url(https://edsonjordan.github.io/Web-School/resource/student__consult-min.jpeg);
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center top;
