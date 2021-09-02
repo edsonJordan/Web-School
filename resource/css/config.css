@@ -4,9 +4,10 @@
     /* Guinda2 -> #F23847 */
     /* Green -> #91BF8A */
     /* Celeste -> #3B8DBF */
-    --color-primary:#F23847;
+    --color-primary:#F23D3D;
     --color-secondary:white;
     --color-gray:#5B5B5F;
+    --color-gray-light:#EFEFEF;
 }
 body{
     margin:0;

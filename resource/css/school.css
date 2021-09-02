@@ -282,23 +282,28 @@ img{
     border-color: rgba(255, 255, 255, .8);
 }
 .section__body{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     row-gap: 25px;
 }
 
 .body__header{
-font-family: var(--font--secundary);
-color: var(--color-gray);
-display: flex;
-flex-direction: column;
-width: 82%;
-row-gap: 10PX;
+    font-family: var(--font--secundary);
+    color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    row-gap: 10px;
+    text-align: center;
 }
 .body__content {
     width: 80%;
 }
 .body__tittle{
+    color: var(--color-primary);
+    font-size: 2em;
     font-weight: 800;
 }
 .body__span{
@@ -348,8 +353,8 @@ row-gap: 10PX;
     font-weight: 500;    
 }
 .img__card{
-    width: 15rem;
-    height: 10rem;
+    width: 4rem;
+    height: 7rem;
     fill: var(--color-gray);
     stroke: var(--color-gray);
 }
@@ -360,7 +365,7 @@ row-gap: 10PX;
 .content__fixed{
     min-height: 10rem;
     position: relative;  
-    background-image: url(https://edsonjordan.github.io/Web-School/resource/student__consult-min.jpeg);
+    background-image: url(https://edsonjordan.github.io/Web-School/resource/school-kids.min.jpg);
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center top;
@@ -571,7 +576,7 @@ row-gap: 10PX;
         border: 1px solid var(--color-primary);
         background-color: red;
      } */
-     .slider{
+    .slider{
         overflow-x: hidden;
     }
     .slider__img{
@@ -600,6 +605,7 @@ row-gap: 10PX;
         font-size: 2em;
         
     }
+    
     
     /* ::-webkit-scrollbar {
         width: 0px;
