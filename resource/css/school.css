@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+/* Rubic */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 /* 
     fonts-familys
      font-family: 'Slabo 13px', serif;  Text
@@ -222,10 +224,11 @@ img{
 .slider__content--triple{
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 .slider__content--triple .slider__img{
     display: flex;
-    height: 30%;
+    height: 60%;
     justify-content: center;
 }
 .slider__content:nth-child(n){
@@ -246,8 +249,9 @@ img{
     object-position: 45% 30%;
 }
 .slider__tittle{
-    font-weight: 800;
-    font-family: var(--font--secundary);
+    font-weight: 400;
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: var(--font--secundary); */
     color: var(--color-secondary);
 }
 .slider__span{
@@ -617,11 +621,11 @@ img{
         justify-content: center;
     }
     .slider__tittle{
-     font-size: 4.5em;   
+     font-size: 4em;   
     }
     .slider__span{
         width: 70%;
-        font-size: 1.2em;   
+        font-size: 2.2em;   
     }
     .slider__link{
         font-size: 1.5em;
