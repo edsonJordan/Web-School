@@ -231,9 +231,7 @@ img{
     height: 60%;
     justify-content: center;
 }
-.slider__content:nth-child(n){
-    background-color:var(--color-primary);
-}
+
 
 .slider__img{
     height: 100%;
@@ -242,6 +240,7 @@ img{
 .slider__img--content{
     object-fit: cover;
     height: 100%;
+    z-index: 20;
 }
 .slider__img--full{
     object-fit: cover;
@@ -250,12 +249,13 @@ img{
 }
 .slider__tittle{
     font-weight: 400;
+    z-index: 20;
     font-family: 'Luckiest Guy', cursive;
     /* font-family: var(--font--secundary); */
     color: var(--color-secondary);
 }
 .slider__span{
-    font-weight: 400;
+    font-weight: 700;
     Word-wrap: break-Word;
 }
 .link{
@@ -278,7 +278,7 @@ img{
 .arrow{
     position: absolute;
     cursor: pointer;
-    z-index: 10;
+    z-index: 30;
     height: 35px;
     width: 35px;
     border-bottom: 4px solid rgba(255, 255, 255, .5);
@@ -323,6 +323,7 @@ img{
     font-weight: 800;
 }
 .body__span{
+    font-size: 18px;
     font-weight: 300;
 }
 .content__cards{
@@ -431,7 +432,7 @@ img{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: var(--color-secondary);
+    color: var(--color-gray-light);
     row-gap: 20px;
     font-family: var(--font--secundary);
 }
@@ -444,7 +445,7 @@ img{
 .icon__social{
     width: 1.2rem;
     height: 1.2rem;
-    fill: var(--color-secondary);
+    fill: var(--color-gray-light);
 }
 .list{
     display: flex;
@@ -630,6 +631,39 @@ img{
     .slider__link{
         font-size: 1.5em;
     }
+    .slider__content:nth-child(n)::before{
+        content: "»";
+        position: absolute;
+        font-size: 15rem;
+        color: rgba(0, 0, 0, .1);
+        left: 2%;
+        top: 5%;
+    }
+    .slider__content:nth-child(2)::after{
+        content: "";
+        position: absolute;
+        width: 8rem;
+        height:8rem;
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, .1);
+        top: 5%;
+        right: 5%;
+        box-shadow: -50px 100px 0px -30px rgba(0, 0, 0, .1) ;
+    }
+    .slider__content:nth-child(3)::after{
+        content: "";
+        position: absolute;
+        width: 10rem;
+        height:30rem;
+        border-radius: 100px;
+        transform: rotate(30deg);
+        background-color: rgba(0, 0, 0, .1);
+        top: -50%;
+        left: 60%;
+        box-shadow: 200px 20px 0px 0px rgba(0, 0, 0, .1);
+       
+    }
+
     .tittle__fixed{       
         font-size: 2.5em;      
         top: 20%;
