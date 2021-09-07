@@ -266,7 +266,6 @@
         overflow-x: scroll;
         width: 100%;
         scroll-snap-type: x mandatory;
-        column-gap: 25px;
         scroll-behavior: smooth;
     }
     .slider__card{
@@ -275,7 +274,7 @@
         flex-direction: column;
         align-items: center;
         row-gap: 15px;
-        min-width: calc(100vw - 20%);
+        min-width: calc(100vw - calc(100vw*0.2));
         scroll-snap-align: center;
     }
     .icon__card--sistema{
@@ -285,8 +284,31 @@
     }
     .card__span--sistema{
         color: var(--color-secondary);
+        font-weight: 800;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
-
+    .point__card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        column-gap: 15px;
+        justify-content: center;
+      }
+      .link__card{
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, .3);
+        
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+      }
+      .link__card.active {
+        background-color: rgba(255, 255, 255, 1);
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+          }
   .none{
         display: none;
   }
