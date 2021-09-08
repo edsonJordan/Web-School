@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta name="description" content="Colegio Thales de mileto, Tu mejor opción">
+    <meta name="description" content="Colegio Thalentus, Tu mejor opción">
     <link rel="stylesheet" href="resource/css/config.css">
     <link rel="stylesheet" href="resource/css/lading.css">
 </head>
@@ -14,40 +14,43 @@
         <header class="container__header">
             <nav class="row col col__nav ">
                 <div class="logo">
-                    Thales de Mileto
+                    <label for="">Thalentus</label>
                 </div>
                 <input class="none input--nav" type="checkbox" name="" id="nav">
-                <label class="label--nav" for="nav"></label>
-                <ul class="row nav__ul none">                    
+                <div class="icon__menu">
+                    <label class="label--nav" for="nav"></label>
+                </div>
+                <ul class="row nav__ul ">                    
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">Home</a>
+                        <a class="nav__link" href="#home">Home</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">Niveles</a>
+                        <a class="nav__link" href="#nivel">Niveles</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link nav__link--active" href="#">Sistema</a>
+                        <a class="nav__link nav__link--active" href="#sistema">Sistema</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">Plana Docente</a>
+                        <a class="nav__link" href="#plana">Plana Docente</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">5° Año</a>
+                        <a class="nav__link" href="#quinto">5° Año</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">Innovación y tecnología</a>
+                        <a class="nav__link" href="#innovacion">Innovación y tecnología</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">Resultados Comprobados</a>
+                        <a class="nav__link" href="#resultados">Resultados Comprobados</a>
                     </li>
                     <li class="nav__li" >
-                        <a class="nav__link" href="#">Nosotros</a>
+                        <a class="nav__link" href="#nosotros">Nosotros</a>
                     </li>
                 </ul>             
             </nav>
         </header>
-        <section class="container__section container__section--home ">
-                <article class="section__content">
+        <!-- Start Section Home -->
+        <section class="container__section container__section--home " id="home">
+                <article class="subsection section__content">
                     <h1 class="content__tittle content__tittle--home">
                         La mejor propuesta educativa
                     </h1>
@@ -58,12 +61,17 @@
                     <a href="#" class="link slider__link">
                         Conoce más
                     </a>
+                    <div class="scroll">
+
+                    </div>
                 </article>
-                <figure class="section__figure">
+                <figure class="subsection section__figure">
                     <img class="section__img" src="resource/student2-academy_slider.min.png" alt="">
                 </figure>
         </section>
-        <section class="container__section container__section--nivel ">
+        <!-- End Section Home -->
+        <!-- Start Section Nivel -->
+        <section class="container__section container__section--nivel " id="nivel">
             <article class="container__cards ">
                 <div class="card">
                     <div class="card__img">
@@ -111,7 +119,9 @@
                 </div>
             </article>
         </section>
-        <section class="container__section container__section--sistema ">
+        <!-- End Section Nivel -->
+        <!-- Start Section Sistema -->
+        <section class="container__section container__section--sistema " id="sistema">
             <div class="section__content section__content--sistema">
                 <h2 class="content__tittle content__tittle--sistema">
                     Sistema académico
@@ -177,8 +187,10 @@
                 </div>                 
             </div>
         </section>
-        <section class="container__section container__section--plana ">
-            <article class="section__content">
+        <!-- End Section Sistema -->
+        <!-- Start Section plana -->
+        <section class="container__section container__section--plana " id="plana">
+            <article class="subsection section__content">
                 <h2 class="content__tittle content__tittle--plana">
                     Excelente plana docente
                 </h2>
@@ -191,12 +203,14 @@
                     Conoce más
                 </a> -->
             </article>
-            <figure class="section__figure">
+            <figure class="subsection section__figure">
                 <img class="section__img" src="resource/school-teacher-reduce-min.png" alt="">
             </figure>
         </section>
-        <section class="container__section container__section--quinto ">
-            <div class="section__content">
+        <!-- End Section plana -->
+        <!-- Start Section quinto -->
+        <section class="container__section container__section--quinto " id="quinto">
+            <div class="subsection section__content">
                 <h2 class="content__tittle content__tittle--quinto">
                     Sistema 5.° año
                 </h2>
@@ -210,12 +224,14 @@
                     Conoce más
                 </a> -->
             </div>
-            <figure class="section__figure">
+            <figure class="subsection section__figure">
                 <img class="section__img" src="resource/student3-academy-slider.png" alt="">
             </figure>
         </section>
-        <section class="container__section container__section--innovacion ">
-            <article class="section__content">
+        <!-- End Section quinto -->
+        <!-- Start Section innovacion -->
+        <section class="container__section container__section--innovacion " id="innovacion">
+            <article class="subsection section__content">
                 <h2 class="content__tittle content__tittle--innovacion">
                     Innovación y tecnología                   
                 </h2>
@@ -231,11 +247,13 @@
                     <li class="content__li--innovacion">Plataforma educativa virtual</li>
                 </ul>                
             </article>
-            <figure class="section__figure">
+            <figure class="subsection section__figure">
                 <img class="section__img" src="resource/student3-academy-slider.png" alt="">
             </figure>
         </section>
-        <section class="container__section container__section--resultados ">
+        <!-- End Section innovacion -->
+        <!-- Start Section resultados -->
+        <section class="container__section container__section--resultados " id="resultados">
             <div class="section__content section__content--resultados">
                 <h2 class="content__tittle content__tittle--resultados">
                     Sistema académico
@@ -319,7 +337,9 @@
                 </div>                 
             </div>
         </section>
-        <section class="container__section container__section--nosotros ">
+        <!-- End Section resultados -->
+        <!-- Start Section nosotros -->
+        <section class="container__section container__section--nosotros " id="nosotros">
             <div class="section__content">
                 <h2 class="content__tittle content__tittle--nosotros">
                     Conoce más sobre nosotros
@@ -328,12 +348,15 @@
                     <source src="resource/thalentus.min.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
+                <h3 class="content__tittle content__tittle--nosotros">
+                    !No dejes a tu hijo sin vacante!
+                </h3>
             </div>
             <footer class="container__section--footer">
                 <span class="span__footer">© 2021 Thalentus. Todos los derechos reservados.</span>
             </footer>    
         </section>
-        
+        <!-- End Section nosotros -->
     </div>
     <script src="resource/scripts/lading.js"></script>
 </body>
