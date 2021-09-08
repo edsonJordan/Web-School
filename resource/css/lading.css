@@ -363,6 +363,15 @@
             color: var(--color-gray-hard); 
             cursor: default;
         }
+        .card__tittle--resultados {
+            color: var(--color-secondary);
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            font-size: 17px;
+            text-align: center;
+            max-width: 14rem;
+            font-family: var(--font--secundary);
+        }
 
         .container__section--resultados{
             justify-content: center;
@@ -553,7 +562,7 @@
             .scroll{
                 display: flex;
                 justify-content: center;
-                width: 40px;
+                width: 33px;
                 height: 80px;
                 background-color: transparent;
                 margin-bottom: 10px;
@@ -617,14 +626,14 @@
             .card__span--resultados{
                 min-height: 25px;
             }
-            .card__tittle--resultados{
+            /* .card__tittle--resultados{
                 color: var(--color-secondary);
                 font-weight: 700;
                 font-size: 16px;
                 text-align: center;
                 max-width: 10rem;
                 font-family: var(--font--secundary);
-            }
+            } */
             .content__span--nosotros{
                 font-size: 18px;
                 font-weight: 800;
