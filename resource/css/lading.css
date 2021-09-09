@@ -369,6 +369,7 @@
             font-size: 17px;
             text-align: center;
             font-family: var(--font--secundary);
+            max-width: 13rem;
         }
 
         .container__section--resultados{
@@ -413,8 +414,13 @@
             text-align: center;
             display: flex;
             justify-content: center;
-            width: 100%;
-            
+            width: 100%;            
+        }
+        .content__span--nosotros{
+            font-size: 18px;
+            font-weight: 800;           
+            font-family: var(--font--primary);
+            color: var(--color-primary) !important;
         }
         .span__footer{
             display: block;
@@ -424,6 +430,7 @@
             padding: 15px 0;
             font-size: 16px;
         }
+       
         .none{
             display: none;
       }
@@ -584,6 +591,7 @@
             }
             .slider{
                 justify-content: space-evenly;
+                column-gap: 15px;
             }
             .point__card{
                 display: none;
@@ -597,12 +605,6 @@
             }
             .card__span--resultados{
                 min-height: 25px;
-            }
-            .content__span--nosotros{
-                font-size: 18px;
-                font-weight: 800;
-                color: var(--color-primary) !important;
-                font-family: var(--font--primary);
             }
             .section__content--resultados{
                 row-gap: 40px;
