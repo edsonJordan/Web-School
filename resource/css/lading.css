@@ -304,6 +304,7 @@
         font-weight: 800;
         font-size: 16px;
         letter-spacing: 1px;
+        font-family: var(--font--secundary);
     }
     .point__card{
         display: flex;
@@ -350,7 +351,8 @@
             padding: 5px 8px;
             min-height: 20px;            
             background-color: var(--color-gray-light);
-            color: var(--color-gray);            
+            color: var(--color-gray);        
+            font-family: var(--font--secundary);    
         }
         .content__li--innovacion:hover{
             background-color: var(--color-gray-light);
@@ -377,6 +379,7 @@
             display: block;
             text-align: center;
             color: var(--color-secondary);
+            font-family: var(--font--primary);
         }
         .slider__card--img{
             display: flex;

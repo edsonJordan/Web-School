@@ -4,7 +4,9 @@
     /* Guinda2 -> #F23847 */
     /* Green -> #91BF8A */
     /* Celeste -> #3B8DBF */
-    --color-primary:#3B8DBF;
+    /* Blue -> #0A4DA6 */
+    /* Blue hard -> #022859 */
+    --color-primary: #0A4DA6;
     --color-secondary:white;
     --color-gray:#5B5B5F;
     --color-gray-hard:#333333;
