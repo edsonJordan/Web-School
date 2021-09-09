@@ -165,10 +165,11 @@
       color: var(--color-gray);
      width: 100%;
   }
-  .nav__link--active{
-      font-weight: 600;
-      color: var(--color-primary);
-  }
+  .nav__link.active{
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
 /* End  Header */
   .container__section{
     display: flex;
@@ -238,8 +239,6 @@
         border-radius: 60px;
         width: fit-content;
     }
-
-
     /* Start Card */
     .container__card--nivel{
         height: 100%;
@@ -369,7 +368,6 @@
             letter-spacing: 1.5px;
             font-size: 17px;
             text-align: center;
-            max-width: 14rem;
             font-family: var(--font--secundary);
         }
 
@@ -435,7 +433,7 @@
             flex-direction: row;            
         }
         .subsection{
-            width:45%;
+            width:40%;
             justify-content: center;
         }        
         .container__cards {
@@ -449,37 +447,15 @@
         .card{
             min-height: 15rem;
         }
-        .container__header{
-            background-color: initial;
-            z-index: initial;
-            /* mix-blend-mode: difference; */
-        }
-        .col__nav{
-            color: initial;
-            background-color: initial;
-        }        
-        .logo{
-            z-index: 40;
-            background-color: initial;
-            mix-blend-mode: difference;          
-        }
-        .icon__menu{
-            z-index: 40;
-            mix-blend-mode: difference;  
-        }
-        .logo label{
-            color: aqua ;   
-            opacity: .8;         
-        }
+
         .label--nav{
             z-index: 40;
-            border-color: aqua;
-            opacity: .8;
+            border-color: var(--color-primary);
         }
         .label--nav::before{
-            background-color: aqua;
-            box-shadow: 0px 7.5px 0px 0px aqua , 0px 15px 0px 0px aqua;
-            opacity: .8;
+            background-color: var(--color-primary);
+            box-shadow: 0px 7.5px 0px 0px var(--color-primary) , 0px 15px 0px 0px var(--color-primary);
+            
         }
         .section__img {
             object-fit: contain;
@@ -508,12 +484,11 @@
             .container__section:nth-child(odd):after {                
                 border-color: var(--color-primary);
                 color: var(--color-primary);
-                opacity: .7;
             }
             .container__section:nth-child(even):after {               
                 border-color: var(--color-secondary);
                 color: var(--color-secondary);
-                opacity: .7;
+                
             }
             .container__section:last-child::after{
                 content: "";
@@ -538,13 +513,9 @@
             height: initial;
             flex-direction: row;
             background-color: initial;
-            width: 70%;
-            mix-blend-mode: difference; 
+            width: 70%; 
             }
-            .nav__link{                
-                color: aqua;
-                opacity: .8;
-            }
+
             .icon__menu{
                 display: none;
             }
@@ -552,12 +523,13 @@
                 border-color: transparent;
                 height: 2rem;
             }
+            .nav__li:hover .nav__link{
+                font-weight: 900;
+                color: var(--color-primary);
+            }
+            
             .nav__li:nth-child(1){
                 border-color: transparent;
-            }
-            .nav__link--active{
-                font-weight: 900;/* 
-                color: rgb(255, 255, 255); */
             }
             .scroll{
                 display: flex;
@@ -588,7 +560,7 @@
             }
             
             .content__span{
-                text-align: left;
+                text-align: justify;
                 font-size: 18px;
                 letter-spacing: 1px;
             }
@@ -626,14 +598,6 @@
             .card__span--resultados{
                 min-height: 25px;
             }
-            /* .card__tittle--resultados{
-                color: var(--color-secondary);
-                font-weight: 700;
-                font-size: 16px;
-                text-align: center;
-                max-width: 10rem;
-                font-family: var(--font--secundary);
-            } */
             .content__span--nosotros{
                 font-size: 18px;
                 font-weight: 800;
