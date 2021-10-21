@@ -1,4 +1,5 @@
 :root{
+    /* Orange -> #F4633A */
     /* Purple  #4973F2*/
     /* Guinda -> #F23D3D */
     /* Guinda2 -> #F23847 */
@@ -6,9 +7,10 @@
     /* Celeste -> #3B8DBF */
     /* Blue -> #0A4DA6 */
     /* Blue hard -> #022859 */
-    --color-primary: #0A4DA6;
+    --color-primary: #F4633A;
     --color-secondary:white;
     --color-gray:#5B5B5F;
+    --color-gray-medium: #53565A;
     --color-gray-hard:#333333;
     --color-gray-light:#EFEFEF;
 }

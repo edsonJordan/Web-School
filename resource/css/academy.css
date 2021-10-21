@@ -208,10 +208,10 @@ img{
 }
 
 .section__slider .slider .slider__content:nth-child(1){
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .12);
 }
 .section__slider .slider .slider__content:nth-child(2){
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .08);
 }
 .section__slider .slider .slider__content:nth-child(3){
     background-color: rgba(255, 255, 255, .1);
@@ -365,8 +365,8 @@ row-gap: 10PX;
 .img__card{
     width: 15rem;
     height: 10rem;
-    fill: var(--color-gray);
-    stroke: var(--color-gray);
+    fill: var(--color-gray-medium);
+    stroke: var(--color-gray-medium);
 }
 .section__application{
     row-gap: initial;

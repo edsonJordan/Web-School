@@ -255,7 +255,7 @@ img{
     color: var(--color-secondary);
 }
 .slider__span{
-    font-weight: 700;
+    font-weight: 900;
     Word-wrap: break-Word;
 }
 .link{
@@ -373,8 +373,8 @@ img{
 .img__card{
     width: 4rem;
     height: 7rem;
-    fill: var(--color-gray);
-    stroke: var(--color-gray);
+    fill: var(--color-gray-medium);
+    stroke: var(--color-gray-medium);
 }
 .section__application{
     row-gap: initial;
