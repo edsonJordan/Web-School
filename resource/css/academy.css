@@ -52,6 +52,7 @@ img{
 }
 .col__header{       
     background-color: var(--color-primary);
+    transition: background-color 0.5s ease;
     color:var(--color-secondary);
 }
 .header__tittle{
@@ -90,6 +91,7 @@ img{
     flex-direction: row;
     background-color: var(--color-secondary);
     color:var(--color-primary);
+    transition: color 0.5s ease;
     justify-content: space-around;
     align-items: center;
 }
@@ -107,6 +109,7 @@ img{
     height: 30px;
     padding: 5px;
     border: 1.2px solid  var(--color-primary);
+    transition: border 0.5s ease;
     cursor: pointer;
     border-radius: 10%;
 }
@@ -117,9 +120,12 @@ img{
     height: 1.5px;
     top: 22%;
     background-color: var(--color-primary);
+   
     position: relative;
     left: calc(20%);
     box-shadow: 0px 7.5px 0px 0px var(--color-primary) , 0px 15px 0px 0px var(--color-primary);
+    transition: all 0.5s ease;
+    transition-property: box-shadow, background-color;
 }
 .input--nav:checked ~ .nav__ul{
     display: flex;
@@ -131,10 +137,13 @@ img{
 }
 .input--nav:checked ~ .label--nav{
     background-color: var(--color-primary);
+    transition: background-color 0.5s ease;
 }
 .input--nav:checked ~ .label--nav::before{
     background-color: var(--color-secondary);
     box-shadow: 0px 8.5px 0px 0px var(--color-secondary) , 0px 17px 0px 0px var(--color-secondary);
+    transition: all 0.5s ease;
+    transition-property: box-shadow, background-color;
 }
 .nav__ul{
     position: absolute;
@@ -183,10 +192,12 @@ img{
     font-weight: 600;
     color: var(--color-primary);
     animation: pulse 1.5s infinite;
+    transition: color 0.5s ease;
 }
 .nav__link--active{
     font-weight: 600;
     color: var(--color-primary);
+    transition: color 0.5s ease;
 }
 
 
@@ -205,6 +216,7 @@ img{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     background-color: var(--color-primary);
+    transition: background-color 0.5s ease;
 }
 
 .section__slider .slider .slider__content:nth-child(1){
@@ -260,6 +272,7 @@ img{
 .link{
     background-color: var(--color-secondary);
     color: var(--color-primary);
+    transition: color 0.5s ease;
     font-family: var(--font--primary);
     padding: 7px 20px;
     font-weight: 900;
@@ -350,6 +363,7 @@ row-gap: 10PX;
 }
 .card:hover .card__link{
     color: var(--color-primary);
+    
     transition: color .3s;
 }
 .card:hover .img__card{
@@ -388,10 +402,12 @@ row-gap: 10PX;
     width: 100%;
     height: 100%;
     background-color: var(--color-primary);
+    transition: background-color 0.5s ease;
     opacity: .3;
 }
 .content__cards--application{
    background-color: var(--color-primary);
+   transition: background-color 0.5s ease;
    gap: initial;
 }
 .card__application{
@@ -526,12 +542,14 @@ row-gap: 10PX;
     }
     .nav__link:hover{
         border-bottom: 2px solid var(--color-primary);
+        transition: border-bottom 0.5s ease;
     }
     .nav__li:nth-child(1) > .nav__link{
         border-bottom: none;
     }
     .nav__link--active{
         border-bottom: 2px solid var(--color-primary);
+        transition: border-bottom 0.5s ease;
     }
     .content__fixed{
         min-height: 250px;

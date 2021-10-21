@@ -83,3 +83,9 @@ document.getElementById('container')?.addEventListener('scroll', (e) => {
     document.getElementById('navigation').children[Math.round(focusDiv)].children[0].classList.add('active');
   }, 300);
 }, true);
+
+
+var r = document.querySelector(':root');
+document.getElementById('pipette')?.addEventListener('change', (e)=>{
+    r.style.setProperty('--color-primary', e.target.value);
+})

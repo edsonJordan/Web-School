@@ -7,7 +7,7 @@
     /* Celeste -> #3B8DBF */
     /* Blue -> #0A4DA6 */
     /* Blue hard -> #022859 */
-    --color-primary: #F4633A;
+    --color-primary: #022859;
     --color-secondary:white;
     --color-gray:#5B5B5F;
     --color-gray-medium: #53565A;
@@ -42,4 +42,24 @@ ul{
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+.ColorsChange{
+    position: fixed;
+    z-index: 99;
+    flex-direction: column;
+    display: flex;
+    width: 40px;
+    height: 80px;
+    bottom: 120px;
+    left: 20px;
+}
+.option{
+    display: flex;
+    width: 85px;
+    padding: 3px;
+    
+}
+.option label{
+    width: 100%;
+    cursor: pointer;
 }

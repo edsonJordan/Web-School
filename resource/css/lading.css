@@ -62,6 +62,7 @@
       flex-direction: row;
       background-color: var(--color-secondary);
       color:var(--color-primary);
+      transition: color 0.5s ease;
       justify-content: space-around;
       align-items: center;
   }
@@ -82,6 +83,10 @@
       border: 2.2px solid  var(--color-primary);
       cursor: pointer;
       border-radius: 10%;
+      transition: border 0.5s ease;
+      
+      
+
   }
   .label--nav::before{
       content: "";
@@ -93,6 +98,8 @@
       position: relative;
       left: calc(20%);
       box-shadow: 0px 7.5px 0px 0px var(--color-primary) , 0px 15px 0px 0px var(--color-primary);
+      transition: all 0.5s ease;
+      transition-property: background-color, box-shadow;
   }
   .input--nav:checked ~ .nav__ul{
       display: flex;
@@ -104,10 +111,13 @@
   }
   .input--nav:checked ~ .label--nav{
       background-color: var(--color-primary);
+      transition: background-color 0.5s ease;
   }
   .input--nav:checked ~ .label--nav::before{
       background-color: var(--color-secondary);
       box-shadow: 0px 8.5px 0px 0px var(--color-secondary) , 0px 17px 0px 0px var(--color-secondary);
+      transition: all 0.5s ease;
+      transition-property: box-shadow, background-color;
   }
   .nav__ul{
       display: none;
@@ -167,6 +177,7 @@
   .nav__link.active{
     font-weight: 900;
     color: var(--color-primary);
+    transition: color 0.5s ease;
 }
 
 /* End  Header */
@@ -192,6 +203,7 @@
   }
     .container__section:nth-child(even){
     background-color: var(--color-primary);
+    transition: background-color 0.5s ease;
     }
     .container__section:nth-child(odd){
         background-color: var(--color-secondary);
@@ -201,6 +213,7 @@
     }
     .container__section:nth-child(odd) > .section__content > .content__tittle{
         color: var(--color-primary);
+        transition: color 0.5s ease;
     }
     .container__section:nth-child(odd) > .section__content > .content__span{
         color: var(--color-gray-hard);
@@ -229,6 +242,7 @@
     .link{
         background-color: var(--color-secondary);
         color: var(--color-primary);
+        transition: color 0.5s ease;
         font-family: var(--font--secundary);
         padding: 7px 20px;
         font-weight: 900;
@@ -252,6 +266,7 @@
         height: 2rem;
         width: 2rem;
         fill: var(--color-primary);
+        transition: fill 0.5s ease;
     }
     .card{
         display: flex;
@@ -265,6 +280,7 @@
     }
     .content__tittle--card{
         color: var(--color-primary);
+        transition: color 0.5s ease;
     }
     .card__span{
         display: block;
@@ -328,11 +344,14 @@
             background-color: var(--color-primary);
             color: var(--color-secondary);
             border: 1px solid transparent;
+            transition: color 0.5s ease;
         }
         .slider__link--active:hover{
             color: var(--color-primary);
             background-color: var(--color-secondary);
             border: 1px solid var(--color-primary);
+            transition: all 0.5s ease;
+            transition-property: background-color, border;
         }
         .content__ul--innovacion{
             display: grid;
@@ -419,6 +438,7 @@
             font-weight: 800;           
             font-family: var(--font--primary);
             color: var(--color-primary) !important;
+            transition: color 0.5s ease;
         }
         .span__footer{
             display: block;
@@ -454,10 +474,13 @@
         .label--nav{
             z-index: 40;
             border-color: var(--color-primary);
+            transition: border-color 0.5s ease;
         }
         .label--nav::before{
             background-color: var(--color-primary);
             box-shadow: 0px 7.5px 0px 0px var(--color-primary) , 0px 15px 0px 0px var(--color-primary); 
+            transition: all 0.5s ease;
+            transition-property: background-color, box-shadow;
         }
         .section__img {
             object-fit: contain;
@@ -484,6 +507,8 @@
             .container__section:nth-child(odd):after {                
                 border-color: var(--color-primary);
                 color: var(--color-primary);
+                transition: all 0.5s ease;
+                transition-property: color, border-color;
             }
             .container__section:nth-child(even):after {               
                 border-color: var(--color-secondary);
